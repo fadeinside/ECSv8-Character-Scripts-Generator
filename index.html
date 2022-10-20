@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>ECSv8 | Character Scripts Generator</title>
+
+	<script src="js/jszip.js"></script>			<!-- Zip file generation script	-->
+	<script src="js/filesaver.js"></script>		<!-- File download script		-->
+	<script src="js/index.js"></script>			<!-- Special ECSv8 scripts		-->
+</head>
+
+<body>
+
+	Load code:<br>
+	<input type="file" accept="*/plain" onchange="openFile(event)"><br><br>
+
+	Loaded code:<br>
+	<textarea id="tempValue1" rows="4" cols="53"></textarea><br><br>
+	File name:
+	<textarea id="tempValue0" rows="1" cols="10">char</textarea>
+	Extension:
+	<textarea id="tempValue2" rows="1" cols="10">lemon</textarea><br><br>
+	Range from:
+	<textarea id="tempValue3" rows="1" cols="10">1</textarea>
+	Range to:
+	<textarea id="tempValue4" rows="1" cols="10">255</textarea><br><br>
+
+	<button type="button" onclick="generateCharScripts();">Generate and download</button><br>
+
+</body>
+
+</html>
